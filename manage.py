@@ -7,7 +7,7 @@ def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'helloworld.settings')
     try:
         from django.core.management.commands.runserver import Command as runserver
-        runserver.default_port = os.environ.get('PORT', 8000)
+        runserver.default_port = os.environ.get('PORT', 8714)
         from django.core.management import execute_from_command_line
     except ImportError as exc:
         raise ImportError(
